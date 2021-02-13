@@ -7,11 +7,11 @@ RUN apt-get update && \
   ruby \
   ruby-dev
 
-# Installing fastlane
-RUN gem install fastlane
-
 # Installing bundle
 RUN gem install bundle
+
+# Installing fastlane
+RUN gem install fastlane
 
 # Install stable nodejs, ionic & cordova
 RUN npm install -g n && n stable
